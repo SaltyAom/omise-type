@@ -25,6 +25,8 @@ declare global {
 		 */
 		OmiseCard: OmiseCard
 	}
+	const Omise: Omise
+	const OmiseCard: OmiseCard
 }
 
 export { Omise, OmiseCard }
