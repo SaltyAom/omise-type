@@ -64,10 +64,10 @@ export type OmiseCardOpen = (config: OmiseCardOpenConfig) => void
 
 export interface OmiseCardOpenConfig {
 	amount: number
-	publicKey: string
+	publicKey?: string
 	buttonLabel?: string
 	currency?: string
-	defaultPaymentMethod?: Payment
+	defaultPaymentMethod?: OtherPaymentMethods
 	frameDescription?: string
 	frameLabel?: string
 	hideAmount?: boolean
@@ -77,8 +77,8 @@ export interface OmiseCardOpenConfig {
 	otherPaymentMethods?: OtherPaymentMethods
 	submitLabel?: string
 	submitFormTarget?: string
-	onCreateTokenSuccess: OmiseCardOnCreateTokenSuccess
-	onFormClosed: OmiseCardOnFormClosed
+	onCreateTokenSuccess?: OmiseCardOnCreateTokenSuccess
+	onFormClosed?: OmiseCardOnFormClosed
 }
 
 export type OmiseCardOnCreateTokenSuccess = (nonce: string) => void

@@ -11,7 +11,7 @@
 		"name": "aomkirby123",
 		"email": "saltyaom@gmail.com"
 	},
-	"version": "2.5.6-revision.1",
+	"version": "2.5.6-revision.2",
 	"types": "./dist/index.d.ts",
 	"license": "MIT",
 	"homepage": "https://github.com/saltyAom/omise-type",
