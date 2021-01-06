@@ -35,7 +35,7 @@ export interface OmiseTokenParameters {
 	country?: string
 	expiration_month: number
 	expiration_year: number
-	name: string | string
+	name: string
 	number: number | string
 	phone_number?: number
 	postal_code?: number
@@ -55,12 +55,12 @@ export interface Card {
 	expiration_year: number
 	financing: string
 	fingerprint: string
-	first_digits: number | number | null
+	first_digits: string | number | null
 	id: string
-	last_digits: string | number | number
+	last_digits: string | number
 	livemode: boolean
 	location: string | null
-	name: string | string
+	name: string
 	number: number | string | null
 	object: string
 	phone_number: number
