@@ -1,0 +1,33 @@
+{
+	"name": "@types/omise-js",
+	"description": "Third-party Omise.js TypeScript's typings support.",
+	"keywords": [
+		"Omise",
+		"TypeScript",
+		"Omise.js",
+		"@types/omise"
+	],
+	"author": {
+		"name": "aomkirby123",
+		"email": "saltyaom@gmail.com"
+	},
+	"version": "2.5.6-revision.0",
+	"types": "./dist/index.d.ts",
+	"license": "MIT",
+	"homepage": "https://github.com/saltyAom/omise-type",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/saltyAom/omise-type"
+	},
+	"bugs": {
+		"url": "https://github.com/saltyAom/omise-type/issues",
+		"email": "saltyaom@gmail.com"
+	},
+	"devDependencies": {
+		"typescript": "^4.1.3"
+	}
+}
