@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+omise-js-typed@^2.5.6-revision.0:
+  version "2.5.6-revision.0"
+  resolved "https://registry.yarnpkg.com/omise-js-typed/-/omise-js-typed-2.5.6-revision.0.tgz#dd3e41d9df8878403d0c620edb2e4b13a8bf9e22"
+  integrity sha512-PThhmYfeR783qXbJAs/OTpNCtsskqmWeyMjctfcnxAC5XdNWygvisVfFEDmMf+8S/gCj57VrglhcnPM9hr6rtg==
+
 typescript@^4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"

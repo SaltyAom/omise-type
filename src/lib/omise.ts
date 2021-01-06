@@ -27,7 +27,7 @@ export type OmiseSetPublicKey = (key: string) => void
 export type OmiseCreateToken = (
 	type: string,
 	tokenParameters: OmiseTokenParameters,
-	callback: OmiseCreateTokenCallback
+	callback: (statusCode: HttpStatusCode, response: OmiseCreateTokenResponse) => void
 ) => void
 
 export interface OmiseTokenParameters {
@@ -76,9 +76,7 @@ export type OmiseCreateTokenCallback = (
 	response: OmiseCreateTokenResponse
 ) => void
 
-export type OmiseCreateTokenResponse =
-	| OmiseCreateResponseSuccessful
-	| OmiseResponseFailure
+export type OmiseCreateTokenResponse = OmiseCreateResponseSuccessful & OmiseResponseFailure
 
 export interface OmiseCreateResponseSuccessful {
 	card: Card
@@ -94,7 +92,7 @@ export interface OmiseCreateResponseSuccessful {
 export type OmiseCreateSource = (
 	type: Payment,
 	sourceParameters: OmiseCreateSourceParameters,
-	callback: OmiseCreateSourceCallback
+	callback: (statusCode: HttpStatusCode, response: OmiseCreateSourceCallbackSuccessful) => void
 ) => void
 
 export interface OmiseCreateSourceParameters {
@@ -108,11 +106,11 @@ export interface OmiseCreateSourceParameters {
     store_id?: string | number
     store_name?: string
     terminal_id?: string | number
-    type: Payment
+    type?: Payment
     zero_interest_installments?: boolean
 }
     
-export type OmiseCreateSourceCallback = OmiseCreateSourceCallbackSuccessful | OmiseResponseFailure
+export type OmiseCreateSourceCallback = OmiseCreateSourceCallbackSuccessful & OmiseResponseFailure
 
 export interface OmiseCreateSourceCallbackSuccessful {
     object: string
