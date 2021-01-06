@@ -48,10 +48,10 @@ export type OmiseCardConfigureButton = (
 
 export interface OmiseCardConfigureButtonConfig {
 	selector: string
-	config?: Object
+	config?: OmiseCardConfigureButtonConfig
 }
 
-export interface OmiseCardConfigureButtonConfig extends Object {
+export interface OmiseCardConfigureButtonConfig {
 	publicKey: string
 	amount: number
 	frameLabel: string
@@ -62,7 +62,7 @@ export type OmiseCardAttach = () => void
 
 export type OmiseCardOpen = (config: OmiseCardOpenConfig) => void
 
-export interface OmiseCardOpenConfig extends Object {
+export interface OmiseCardOpenConfig {
 	amount: number
 	publicKey: string
 	buttonLabel?: string
