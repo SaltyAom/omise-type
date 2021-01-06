@@ -15,9 +15,9 @@ This repo is source code for third-party Omise.js TypeScript's typings for web d
 ## Getting Start
 1. Install using npm or yarn
 ```bash
-npm install --save-dev @types/omise-js
+npm install --save-dev omise-js-typed
 
-yarn add --dev @types/omise-js
+yarn add --dev omise-js-typed
 ```
 
 2. Done

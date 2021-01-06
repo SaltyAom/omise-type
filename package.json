@@ -1,5 +1,5 @@
 {
-	"name": "@types/omise-js",
+	"name": "omise-js-typed",
 	"description": "Third-party Omise.js TypeScript's typings support.",
 	"keywords": [
 		"Omise",
