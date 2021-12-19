@@ -74,7 +74,7 @@ export interface OmiseCardOpenConfig {
 	image?: string
 	locale?: Locale
 	location?: 'yes' | 'no'
-	otherPaymentMethods?: OtherPaymentMethods
+	otherPaymentMethods?: OtherPaymentMethods[] | OtherPaymentMethods;
 	submitLabel?: string
 	submitFormTarget?: string
 	onCreateTokenSuccess?: OmiseCardOnCreateTokenSuccess
